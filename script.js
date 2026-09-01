@@ -3,25 +3,25 @@ const WA_NUMBER = "5521981588788";
 const wa = (text) => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(text);
 
 const waMessages = {
-  main: "Fala Evans, beleza? Vi seu portfólio (Evans Web) e quero trocar ideia sobre um site para a minha empresa.",
-  final: "Fala Evans, tudo bem? Quero dar o próximo passo para criar o site do meu negócio. Vamos conversar?",
-  similar: (name) => `Fala Evans! Vi o projeto "${name}" no seu portfólio e curti bastante. Quero um estilo parecido para o meu negócio, podemos conversar?`
+  main: "Hey Evans, how's it going? I saw your portfolio (Evans Web) and I'd like to discuss a website for my company.",
+  final: "Hey Evans, how are you? I want to take the next step to create my business website. Shall we talk?",
+  similar: (name) => `Hey Evans! I saw the "${name}" project in your portfolio and really liked it. I want a similar style for my business, can we talk?`
 };
 
 // ===== Projects =====
 const projects = [
-  { img: "assets/proj-01.webp", name: "Evolution Fit Studio", cat: "fitness", catLabel: "Fitness", desc: "Academia moderna com horários e planos.", url: "https://userdoomain.github.io/evolution-fit-studio/", keywords: ["academia", "fitness", "treino", "musculacao", "crossfit", "esporte"] },
-  { img: "assets/proj-02.webp", name: "Imperial Barber", cat: "barbearias", catLabel: "Barbearia", desc: "Barbearia estilo clássico com agendamento.", url: "https://userdoomain.github.io/imperial-barber-site/", keywords: ["barbearia", "barba", "cabelo", "barbeiro", "salao"] },
-  { img: "assets/proj-03.webp", name: "Nova Prime Store", cat: "servicos", catLabel: "Serviço", desc: "Loja moderna e rápida para catálogo.", url: "https://userdoomain.github.io/nova-prime-store/", keywords: ["loja", "store", "ecommerce", "vendas", "produtos", "roupas", "comercio"] },
-  { img: "assets/proj-04.webp", name: "Sabor e Brasa Premium", cat: "restaurantes", catLabel: "Restaurante", desc: "Restaurante com cardápio e destaques.", url: "https://userdoomain.github.io/sabor-e-brasa-premium/", keywords: ["restaurante", "comida", "lanchonete", "pizza", "hamburguer", "churrascaria", "bar", "cafe", "gastronomia"] },
-  { img: "assets/proj-05.webp", name: "Aurora Palace Hotel", cat: "hoteis", catLabel: "Hotel & Hospedagem", desc: "Hotel com quartos e galeria.", url: "https://userdoomain.github.io/aurora-palace-hotel/", keywords: ["hotel", "pousada", "hospedagem", "resort", "quartos", "turismo"] },
-  { img: "assets/proj-06.webp", name: "Advocacia Premium", cat: "servicos", catLabel: "Serviço", desc: "Escritório de advocacia profissional.", url: "https://userdoomain.github.io/advocacia/", keywords: ["advogado", "advocacia", "direito", "juridico", "escritorio"] },
-  { img: "assets/proj-07.webp", name: "Clínica Vida+", cat: "saude", catLabel: "Saúde", desc: "Clínica médica com especialidades.", url: "https://userdoomain.github.io/clinica/", keywords: ["clinica", "medico", "saude", "consultorio", "hospital", "pediatra", "cardiologista"] },
-  { img: "assets/proj-08.webp", name: "VetCare Veterinária", cat: "saude", catLabel: "Saúde", desc: "Clínica veterinária e serviços.", url: "https://userdoomain.github.io/clinica-veterinaria/", keywords: ["veterinario", "pet", "animal", "cachorro", "gato", "clinica pet"] },
-  { img: "assets/proj-09.webp", name: "Oficina Mecânica Pro", cat: "servicos", catLabel: "Serviço", desc: "Oficina automotiva e orçamentos.", url: "https://userdoomain.github.io/oficina-de-carro/", keywords: ["oficina", "carro", "mecanico", "auto", "veiculos", "pneu", "reparo"] },
-  { img: "assets/proj-10.webp", name: "Pet Shop Amigo", cat: "servicos", catLabel: "Serviço", desc: "Pet shop com banho, tosa e produtos.", url: "https://userdoomain.github.io/pet-shop/", keywords: ["petshop", "banho e tosa", "racao", "gatos", " caes"] },
-  { img: "assets/proj-11.webp", name: "Salão Beleza & Arte", cat: "servicos", catLabel: "Serviço", desc: "Salão de beleza e portfólio.", url: "https://userdoomain.github.io/salao-de-beleza/", keywords: ["salao de beleza", "cabelereiro", "manicure", "estetica", "depilacao"] },
-  { img: "assets/proj-12.webp", name: "Salão de Festas Celebrar", cat: "servicos", catLabel: "Serviço", desc: "Espaço de eventos e reservas.", url: "https://userdoomain.github.io/salao-de-festa/", keywords: ["salao de festas", "buffet", "eventos", "casamento", "aniversario"] }
+  { img: "assets/proj-01.webp", name: "Evolution Fit Studio", cat: "fitness", catLabel: "Fitness", desc: "Modern gym with schedules and plans.", url: "https://userdoomain.github.io/evolution-fit-studio/", keywords: ["academia", "fitness", "treino", "musculacao", "crossfit", "esporte"] },
+  { img: "assets/proj-02.webp", name: "Imperial Barber", cat: "barbearias", catLabel: "Barbershop", desc: "Classic-style barbershop with booking.", url: "https://userdoomain.github.io/imperial-barber-site/", keywords: ["barbearia", "barba", "cabelo", "barbeiro", "salao"] },
+  { img: "assets/proj-03.webp", name: "Nova Prime Store", cat: "servicos", catLabel: "Service", desc: "Modern and fast store for catalog.", url: "https://userdoomain.github.io/nova-prime-store/", keywords: ["loja", "store", "ecommerce", "vendas", "produtos", "roupas", "comercio"] },
+  { img: "assets/proj-04.webp", name: "Sabor e Brasa Premium", cat: "restaurantes", catLabel: "Restaurant", desc: "Restaurant with menu and highlights.", url: "https://userdoomain.github.io/sabor-e-brasa-premium/", keywords: ["restaurante", "comida", "lanchonete", "pizza", "hamburguer", "churrascaria", "bar", "cafe", "gastronomia"] },
+  { img: "assets/proj-05.webp", name: "Aurora Palace Hotel", cat: "hoteis", catLabel: "Hotel & Accommodation", desc: "Hotel with rooms and gallery.", url: "https://userdoomain.github.io/aurora-palace-hotel/", keywords: ["hotel", "pousada", "hospedagem", "resort", "quartos", "turismo"] },
+  { img: "assets/proj-06.webp", name: "Advocacia Premium", cat: "servicos", catLabel: "Service", desc: "Professional law firm.", url: "https://userdoomain.github.io/advocacia/", keywords: ["advogado", "advocacia", "direito", "juridico", "escritorio"] },
+  { img: "assets/proj-07.webp", name: "Clínica Vida+", cat: "saude", catLabel: "Health", desc: "Medical clinic with specialties.", url: "https://userdoomain.github.io/clinica/", keywords: ["clinica", "medico", "saude", "consultorio", "hospital", "pediatra", "cardiologista"] },
+  { img: "assets/proj-08.webp", name: "VetCare Veterinária", cat: "saude", catLabel: "Health", desc: "Veterinary clinic and services.", url: "https://userdoomain.github.io/clinica-veterinaria/", keywords: ["veterinario", "pet", "animal", "cachorro", "gato", "clinica pet"] },
+  { img: "assets/proj-09.webp", name: "Oficina Mecânica Pro", cat: "servicos", catLabel: "Service", desc: "Automotive workshop and quotes.", url: "https://userdoomain.github.io/oficina-de-carro/", keywords: ["oficina", "carro", "mecanico", "auto", "veiculos", "pneu", "reparo"] },
+  { img: "assets/proj-10.webp", name: "Pet Shop Amigo", cat: "servicos", catLabel: "Service", desc: "Pet shop with bathing, grooming and products.", url: "https://userdoomain.github.io/pet-shop/", keywords: ["petshop", "banho e tosa", "racao", "gatos", " caes"] },
+  { img: "assets/proj-11.webp", name: "Salão Beleza & Arte", cat: "servicos", catLabel: "Service", desc: "Beauty salon and portfolio.", url: "https://userdoomain.github.io/salao-de-beleza/", keywords: ["salao de beleza", "cabelereiro", "manicure", "estetica", "depilacao"] },
+  { img: "assets/proj-12.webp", name: "Salão de Festas Celebrar", cat: "servicos", catLabel: "Service", desc: "Events venue and reservations.", url: "https://userdoomain.github.io/salao-de-festa/", keywords: ["salao de festas", "buffet", "eventos", "casamento", "aniversario"] }
 ];
 
 const grid = document.getElementById("projectsGrid");
@@ -34,18 +34,18 @@ function renderProjects(filter = "all") {
       card.className = "project-card";
       card.innerHTML = `
         <div class="project-media">
-          <img src="${p.img}" alt="Prévia ${p.name}" loading="lazy" />
+          <img src="${p.img}" alt="Preview ${p.name}" loading="lazy" />
           <div class="project-tags">
             <span class="tag tag-cat">${p.catLabel}</span>
-            <span class="tag tag-demo">Demonstração</span>
+            <span class="tag tag-demo">Demo</span>
           </div>
         </div>
         <div class="project-body">
           <h3 class="project-name">${p.name}</h3>
           <p class="project-desc">${p.desc}</p>
           <div class="project-actions">
-            <a class="btn btn-primary" href="${p.url}" target="_blank" rel="noopener">Ver projeto</a>
-            <a class="btn btn-outline" data-wa="similar" data-project="${p.name}" href="#">Site parecido</a>
+            <a class="btn btn-primary" href="${p.url}" target="_blank" rel="noopener">View project</a>
+            <a class="btn btn-outline" data-wa="similar" data-project="${p.name}" href="#">Similar website</a>
           </div>
         </div>`;
       grid.appendChild(card);
@@ -75,13 +75,13 @@ const icons = {
 };
 
 const features = [
-  { icon: "design", title: "Design sob medida", desc: "Visual limpo e profissional focado na sua marca." },
-  { icon: "mobile", title: "Versão celular perfeita", desc: "Seu cliente abre no celular e navega sem travar." },
-  { icon: "whatsapp", title: "Botão de WhatsApp", desc: "Chamadas fáceis para fechar vendas direto no seu chat." },
-  { icon: "seo", title: "SEO básico", desc: "Pronto para ser achado mais facilmente no Google." },
-  { icon: "domain", title: "Domínio próprio", desc: "Seu endereço .com.br configurado certinho." },
-  { icon: "host", title: "Hospedagem inclusa", desc: "Site rápido, seguro e sempre no ar." },
-  { icon: "maint", title: "Suporte e ajustes", desc: "Ajuda sempre que precisar atualizar algo." }
+  { icon: "design", title: "Custom design", desc: "Clean and professional look focused on your brand." },
+  { icon: "mobile", title: "Perfect mobile version", desc: "Your customer opens it on mobile and browses without lag." },
+  { icon: "whatsapp", title: "WhatsApp button", desc: "Easy clicks to close sales directly in your chat." },
+  { icon: "seo", title: "Basic SEO", desc: "Ready to be found more easily on Google." },
+  { icon: "domain", title: "Own domain", desc: "Your .com.br address configured properly." },
+  { icon: "host", title: "Hosting included", desc: "Fast, secure website that's always online." },
+  { icon: "maint", title: "Support and tweaks", desc: "Help whenever you need to update something." }
 ];
 
 const fGrid = document.getElementById("featuresGrid");
@@ -143,10 +143,10 @@ function processUserMessage(rawText) {
 
   setTimeout(() => {
     if (text.includes("preço") || text.includes("valor") || text.includes("quanto custa") || text.includes("custa")) {
-      const waLink = wa("Fala Evans! Vi o site e quero saber mais sobre os preços e valores para criar um site para minha empresa.");
-      addMsg("Os valores variam conforme o que sua empresa precisa (número de páginas, recursos, etc.). O preço é super justo e combinado direto com o Evans no WhatsApp! 📱", "bot");
+      const waLink = wa("Hey Evans! I saw the site and want to know more about the prices and values to create a website for my company.");
+      addMsg("Prices vary depending on what your business needs (number of pages, features, etc.). The price is very fair and agreed directly with Evans on WhatsApp! 📱", "bot");
       addMsg("", "bot", `
-        <a href="${waLink}" target="_blank" class="btn btn-whatsapp" style="font-size:0.82rem; padding:8px 14px; margin-top:6px; display:inline-flex;">Falar de Preços no WhatsApp</a>
+        <a href="${waLink}" target="_blank" class="btn btn-whatsapp" style="font-size:0.82rem; padding:8px 14px; margin-top:6px; display:inline-flex;">Talk Prices on WhatsApp</a>
       `);
       return;
     }
@@ -155,8 +155,8 @@ function processUserMessage(rawText) {
     let matched = projects.find(p => p.keywords.some(k => text.includes(k)) || text.includes(p.name.toLowerCase()));
     
     if (matched) {
-      const waProj = wa(`Fala Evans! Vi o projeto demonstrativo "${matched.name}" no seu site e quero um site parecido para a minha empresa.`);
-      addMsg(`Achei o projeto ideal para o seu ramo! Veja o preview de **${matched.name}** abaixo:`, "bot");
+      const waProj = wa(`Hey Evans! I saw the demo project "${matched.name}" on your site and I want a similar website for my company.`);
+      addMsg(`I found the ideal project for your industry! See the preview of **${matched.name}** below:`, "bot");
       addMsg("", "bot", `
         <div class="chat-card-preview">
           <img src="${matched.img}" alt="${matched.name}" />
@@ -164,17 +164,17 @@ function processUserMessage(rawText) {
             <strong>${matched.name}</strong>
             <span style="font-size:0.78rem; color:#9ca3af;">${matched.desc}</span>
             <div class="chat-card-actions">
-              <a href="${matched.url}" target="_blank" class="c-view">Ver Site</a>
-              <a href="${waProj}" target="_blank" class="c-wa">Quero um assim</a>
+              <a href="${matched.url}" target="_blank" class="c-view">View Site</a>
+              <a href="${waProj}" target="_blank" class="c-wa">I want one like this</a>
             </div>
           </div>
         </div>
       `);
     } else {
-      const waGeneral = wa(`Fala Evans! Vi seu site e gostaria de criar um site para a minha empresa. Pode me ajudar?`);
-      addMsg("Entendi! Para te atender da melhor forma e passar um orçamento exato para o seu negócio, chama direto o Evans no WhatsApp:", "bot");
+      const waGeneral = wa(`Hey Evans! I saw your site and would like to create a website for my company. Can you help me?`);
+      addMsg("Got it! To serve you best and give you an exact quote for your business, contact Evans directly on WhatsApp:", "bot");
       addMsg("", "bot", `
-        <a href="${waGeneral}" target="_blank" class="btn btn-whatsapp" style="font-size:0.82rem; padding:8px 14px; margin-top:6px; display:inline-flex;">Conversar no WhatsApp agora</a>
+        <a href="${waGeneral}" target="_blank" class="btn btn-whatsapp" style="font-size:0.82rem; padding:8px 14px; margin-top:6px; display:inline-flex;">Chat on WhatsApp now</a>
       `);
     }
   }, 400);
@@ -191,9 +191,9 @@ document.querySelectorAll(".quick-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const q = btn.dataset.query;
     if (q === "preco") {
-      processUserMessage("Qual o preço?");
+      processUserMessage("What's the price?");
     } else {
-      processUserMessage(`Quero um site para ${q}`);
+      processUserMessage(`I want a website for ${q}`);
     }
   });
 });
